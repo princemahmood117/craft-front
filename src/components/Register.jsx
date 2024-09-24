@@ -51,7 +51,7 @@ const Register = () => {
     }
     return (
  <Slide>
-           <div className="heromin-h-screen">
+           <div className="heromin-h-screen mt-20">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold italic">Register <span className='text-purple-700'>Here!</span> </h1>

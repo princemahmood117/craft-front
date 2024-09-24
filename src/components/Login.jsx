@@ -47,7 +47,7 @@ const Login = () => {
     return (
  
 
-<div className="w-full max-w-md p-8 space-y-3 rounded-xl bg-slate-800 m-auto mt-10">
+<div className="w-full max-w-md p-8 space-y-3 rounded-xl bg-slate-800 m-auto mt-20">
 	<h1 className="text-4xl font-bold text-center text-purple-700">Login</h1>
 	<form onSubmit={handleLogin} noValidate="" action="" className="space-y-6">
 		<div className="space-y-1 text-sm">
