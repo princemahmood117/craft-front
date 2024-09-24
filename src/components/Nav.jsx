@@ -55,17 +55,7 @@ const Nav = () => {
               All crafts
             </NavLink>
           </li>
-          
-          <li>
-           <NavLink
-            className={({ isActive }) =>
-              isActive ? "text-white bg-slate-500" : ""
-            }
-            to="/register"
-          >
-            Sign Up
-          </NavLink>
-          </li>
+    
 
           <li>
            <NavLink
