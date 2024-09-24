@@ -1,6 +1,6 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "./ContextProvider/ContextProvider";
 
 
@@ -8,6 +8,9 @@ const Login = () => {
 
 	const {signInUser,signInwithGoogle} = useContext(AuthContext)
 	const [error,setError] = useState("");
+
+	const location = useLocation();
+	const navigate = useNavigate()
 
 	const handleLogin = (e) => {
 		e.preventDefault();
@@ -18,9 +21,8 @@ const Login = () => {
 
 		signInUser(email,password)
 		.then(()=>{
-		//   console.log(result.user);
-		//   console.log('login success');
-		  Navigate(location?.state ? location.state : '/')
+		
+			navigate(location?.state ? location.state : '/')
 		  }
 		)
 		.catch(() => {
@@ -32,8 +34,8 @@ const Login = () => {
      
 		signInwithGoogle()
 		.then(()=>{
-		//   console.log(result.user);
-		  Navigate(location?.state ? location.state : '/')
+	
+		navigate(location?.state ? location.state : '/')
 		 
 		 
 		})
@@ -41,6 +43,11 @@ const Login = () => {
 		  console.log(error);
 		})
 	  }
+
+	      // show the top of the page after clicking on "Read more"
+		  useEffect(() => {
+			window.scrollTo(0, 0);
+		}, []);
 
 
 
