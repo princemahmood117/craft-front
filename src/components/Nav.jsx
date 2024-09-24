@@ -63,7 +63,7 @@ const Nav = () => {
             }
             to="/register"
           >
-            Register
+            Sign Up
           </NavLink>
           </li>
 
