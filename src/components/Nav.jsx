@@ -65,7 +65,17 @@ const Nav = () => {
           >
             Register
           </NavLink>
-   
+          </li>
+
+          <li>
+           <NavLink
+            className={({ isActive }) =>
+              isActive ? "text-white bg-slate-500" : ""
+            }
+            to="/about"
+          >
+            About Us
+          </NavLink>
           </li>
         </>
       );
