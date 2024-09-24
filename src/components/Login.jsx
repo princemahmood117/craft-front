@@ -48,7 +48,7 @@ const Login = () => {
  
 
 <div className="w-full max-w-md p-8 space-y-3 rounded-xl bg-slate-800 m-auto mt-10">
-	<h1 className="text-2xl font-bold text-center">Login</h1>
+	<h1 className="text-4xl font-bold text-center text-purple-700">Login</h1>
 	<form onSubmit={handleLogin} noValidate="" action="" className="space-y-6">
 		<div className="space-y-1 text-sm">
 			<label htmlFor="username" className="block ">Email</label>
@@ -60,7 +60,7 @@ const Login = () => {
 		</div>
 
 		<div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn btn-primary bg-purple-600 border-none">Login</button>
           </div>
 
 		<div className="flex items-center pt-4 space-x-1">
