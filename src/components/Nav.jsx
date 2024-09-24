@@ -67,6 +67,25 @@ const Nav = () => {
             About Us
           </NavLink>
           </li>
+
+          {!user && (
+        <li>
+          <NavLink className={({ isActive }) => (isActive ? "text-white bg-slate-500" : "")} to="/register">
+            Sign up
+          </NavLink>
+        </li>
+      )}
+
+          {/* <li>
+           <NavLink
+            className={({ isActive }) =>
+              isActive ? "text-white bg-slate-500" : ""
+            }
+            to="/register"
+          >
+            Sign up
+          </NavLink>
+          </li> */}
         </>
       );
     return (
