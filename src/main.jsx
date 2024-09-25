@@ -42,21 +42,21 @@ const router = createBrowserRouter([
       {
         path: "/allCrafts",
         element: <AllCrafts></AllCrafts>,
-        loader: () => fetch("http://localhost:5000/crafts"),
+        loader: () => fetch("https://backend-seven-sable.vercel.app/crafts"),
       },
 
       {
         path: "/updateCraft/:id",
         element: <PrivateRoute> <UpdateCraft></UpdateCraft> </PrivateRoute> ,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/crafts/${params.id}`),
+          fetch(`https://backend-seven-sable.vercel.app/crafts/${params.id}`),
       },
 
       {
         path: "/craftDetails/:id",
         element: <PrivateRoute> <CraftDetails></CraftDetails> </PrivateRoute> ,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/crafts/${params.id}`),
+          fetch(`https://backend-seven-sable.vercel.app/crafts/${params.id}`),
       },
 
       {

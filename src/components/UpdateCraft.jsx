@@ -30,7 +30,7 @@ const UpdateCraft = () => {
       photo,
     };
 
-    fetch(`http://localhost:5000/crafts/${_id}`, {
+    fetch(`https://backend-seven-sable.vercel.app/crafts/${_id}`, {
       // request will be sent to this url
       method: "PUT",
       headers: {

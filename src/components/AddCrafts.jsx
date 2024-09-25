@@ -36,7 +36,7 @@ const AddCrafts = () => {
         // (A) send the 'newCoffee' data to the server
     
         // have to send from client to server, so have to use server side's url where the data will be stored
-        fetch("http://localhost:5000/crafts", {
+        fetch("https://backend-seven-sable.vercel.app/crafts", {
           // request will be sent to this url
           method: "POST",
           headers: {

@@ -16,7 +16,7 @@ const CraftCard = ({ craft, setCrafts, crafts }) => {
       confirmButtonText: "Yes, confirm delete!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/crafts/${_id}`, {
+        fetch(`https://backend-seven-sable.vercel.app/crafts/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
